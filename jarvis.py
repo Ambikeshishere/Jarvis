@@ -33,7 +33,7 @@ def listen():
 
 def chat_with_jarvis(prompt):  
     try:  
-        response = ollama.chat(model="llama3.2", messages=[{"role": "user", "content": prompt}])  
+        response = ollama.chat(model="llama3.2:1b", messages=[{"role": "user", "content": prompt}])  
         return response["message"]["content"]  
     except Exception as e:  
         return f"Error: {str(e)}"  
