@@ -9,7 +9,7 @@ import psutil
 import socket  
 import requests  
 from datetime import datetime  
-  
+
 engine = pyttsx3.init()  
 engine.setProperty("rate", 170)  
 
